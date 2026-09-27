@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uif Rvftu Bifbe</title>
+    <style>
+        /* --- Global Color Inversion Rule & Custom Cursor --- */
+        html {
+            filter: invert(1); 
+            background-color: #ffffff; 
+            
+            /* Targets your custom transparent image file (Recommended size: 32x32px) */
+            cursor: url('cursor2.png'), auto;
+        }
+
+        body {
+            text-align: center;
+            margin: 0; 
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px auto;
+        }
+        
+        .image-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* --- Full-Page Overlays --- */
+        .full-page-overlay {
+            position: fixed; /* Locks it to the browser viewport screen */
+            top: 0;
+            left: 0;
+            width: 100vw;    /* 100% of the viewport width */
+            height: 100vh;   /* 100% of the viewport height */
+            object-fit: cover; /* Forces the image to stretch and cover the whole screen beautifully */
+            z-index: 9997;   /* Sits below overlay two */
+            pointer-events: none; /* Crucial: Allows clicks to pass through to everything underneath */
+            
+            /* Applies the flicker animation */
+            animation: flicker 5s infinite;
+        }
+
+        /* --- UPDATED: Second Overlay stretched to Full Screen --- */
+        .secondary-overlay {
+            position: fixed;       
+            z-index: 9998;         
+            pointer-events: none;  
+            
+            top: 0px;
+            left: 0px;             
+            width: 100vw;          /* 100% viewport width */
+            height: 100vh;         /* 100% viewport height */
+            object-fit: cover;     /* Prevents image distortion while stretching */
+        }
+
+        /* --- UPDATED: Third Overlay stretched to Full Screen --- */
+        .third-overlay {
+            position: fixed;       
+            z-index: 9998;         
+            pointer-events: none;  
+            
+            top: 0px;
+            left: 0px;            
+            width: 100vw;          /* 100% viewport width */
+            height: 100vh;         /* 100% viewport height */
+            object-fit: cover;     /* Prevents image distortion while stretching */
+        }
+
+        /* --- UPDATED: Fourth Overlay stretched to Full Screen --- */
+        .fourth-overlay {
+            position: fixed;       
+            z-index: 9998;         
+            pointer-events: none;  
+            
+            top: 0px;
+            left: 0px;            
+            width: 100vw;          /* 100% viewport width */
+            height: 100vh;         /* 100% viewport height */
+            object-fit: cover;     /* Prevents image distortion while stretching */
+		opacity: 0.25;
+        }
+
+        /* --- New Second Full-Page Image Overlay --- */
+        .full-page-overlay-two {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* Ensures the second image covers the screen evenly without stretching */
+            z-index: 9998;   /* Sits right on top of the first overlay image */
+            pointer-events: none;
+            /*opacity: 0.5;*/    /* Set to 50% opacity so you can see both images combined. Adjust from 0.0 to 1.0 */
+        }
+
+        /* @keyframes flicker {
+            0%   { opacity: 0.8; }
+            12%  { opacity: 0.2; }
+            20%  { opacity: 0.7; }
+            35%  { opacity: 0.1; }
+            50%  { opacity: 0.9; }
+            68%  { opacity: 0.3; }
+            80%  { opacity: 0.8; }
+            92%  { opacity: 0.2; }
+            100% { opacity: 0.9; }
+        } */
+
+        .invisible-hotspot {
+            position: absolute;
+            background: transparent; 
+            cursor: pointer; /* Temporarily turns custom mouse into a hand pointer to show a link is here */
+            top: 58%;
+            left: 23%;
+            width: 30%;   
+            height: 30%;  
+            z-index: 9999; 
+        }
+
+        /* --- Highly Visible Audio Button Interface Styling --- */
+        .audio-controls-container {
+            margin: 30px auto;
+            position: relative;
+            z-index: 10000; 
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap; 
+        }
+
+        .custom-play-btn {
+            background-color: #000000; 
+            color: #ffffff;            
+            border: 3px solid #ffffff; 
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            
+            /* Tells the buttons to maintain your custom cursor design when hovered */
+            cursor: inherit; 
+            
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+            transition: all 0.2s ease-in-out;
+            
+            /* Give the buttons a uniform fixed width so they NEVER change sizes */
+            width: 190px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .custom-play-btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+            transform: scale(1.05); 
+        }
+    </style> 
+</head> 
+<body>
+
+    <!-- Secondary Overlay Layout -->
+    <img src="corrupt2.png" alt="Be ready traveler" class="secondary-overlay">
+
+    <!-- Third Overlay Layout -->
+    <img src="corrupt4.png" alt="The cycle continues" class="third-overlay">
+
+    <!-- Fourth Overlay Layout -->
+    <img src="corrupt5.png" alt="The pattern closes" class="fourth-overlay">
+
+    <h1>IF JT DPNJOH.</h1>
+    <p>IF JT DPNJOH.</p>
+    
+    <div class="image-container">
+        <!-- Main Graphic Content -->
+        <img src="websiteimage.jpg" alt="Aedha Mac Donnchaidh">
+        
+        <!-- Instagram Link Box Area -->
+        <a href="https://instagram.com" class="invisible-hotspot" title="Uif Effs Xbudift."></a>
+    </div> 
+
+    <!-- Silent Underlying Core Audio Assets -->
+    <audio id="audioTrack1" src="birdsanddeer.mp3"></audio>
+    <audio id="audioTrack2" src="hardcorelol.mp3"></audio>
+    <audio id="audioTrack3" src="seenoevillol.mp3"></audio>
+
+    <!-- Fixed-Size Visual Buttons for Viewers -->
+    <div class="audio-controls-container">
+        <button class="custom-play-btn" onclick="toggleAudio('audioTrack1', this)">
+            <span class="icon">▶</span> <span class="label">Sound 1</span>
+        </button>
+        <button class="custom-play-btn" onclick="toggleAudio('audioTrack2', this)">
+            <span class="icon">▶</span> <span class="label">Sound 2</span>
+        </button>
+        <button class="custom-play-btn" onclick="toggleAudio('audioTrack3', this)">
+            <span class="icon">▶</span> <span class="label">Sound 3</span>
+        </button>
+    </div>
+
+    <!-- INTEGRATED: High-Priority Inline Control Block -->
+    <div style="position: fixed !important; z-index: 999999 !important; pointer-events: none !important; bottom: 50px !important; right: 70px !important;">
+        <img src="deerwalker2.png" alt="HE WATCHES" style="width: 700px !important; height: auto !important; filter: invert(1) !important;">
+    </div>
+
+    <!-- Active Runtime Controller script -->
+    <script>
+        function toggleAudio(audioId, btnElement) {
+            const currentAudio = document.getElementById(audioId);
+            const currentIcon = btnElement.querySelector('.icon');
+            
+            // Reset all other buttons to standard Play state
+            document.querySelectorAll('audio').forEach(track => {
+                if (track !== currentAudio) {
+                    track.pause();
+                    const siblingBtn = document.querySelector(`[onclick*="${track.id}"]`);
+                    if(siblingBtn) {
+                        siblingBtn.querySelector('.icon').innerText = "▶";
+                    }
+                }
+            });
+
+            // Cleanly toggle only the single character symbol icon
+            if (currentAudio.paused) {
+                currentAudio.play();
+                currentIcon.innerText = "⏸";
+            } else {
+                currentAudio.pause();
+                currentIcon.innerText = "▶";
+            }
+        }
+    </script>
+
+</body>
+</html>
